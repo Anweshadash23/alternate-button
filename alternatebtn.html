@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+</head>
+<body>
+ 
+ <button id = "a" class ="b">1</button><br><br>
+ <button id = "b" class ="a">2</button><br><br>
+ <button id = "c" class ="b">3</button><br><br>
+ <button id = "d" class ="a">4</button><br><br>
+ <button id = "e" class ="b">5</button><br><br>
+ <button id = "f" class ="a">6</button><br><br>
+ <button id = "g" class ="b">7</button><br><br>
+ <button id = "h" class ="a">8</button><br><br>
+ <button id = "i" class ="b">9</button><br><br>
+ <button id = "j" class ="a">10</button><br><br>
+ 
+ <button onclick="fun()">CLICK</button>
+ 
+ 
+ 
+ 
+</body>
+<script>
+ 
+ function fun()
+ {
+ let a = document.getElementsByClassName("b")
+ for(let i =0; i<a.length;i++)
+ {
+ a[i].style.color = "red"
+ }
+ 
+ let b = document.getElementsByClassName("a")
+ for(let i =0; i<a.length;i++)
+ {
+ b[i].style.color = "blue"
+ }
+ }
+ 
+</script>
+</html>
